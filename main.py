@@ -10,10 +10,10 @@ language_options = ["English", "Hinglish"]
 
 # Main app layout
 def main():
-    st.subheader("LinkedIn Post Generator: Codebasics")
+    st.subheader("LinkedIn Post Generator")
 
     # Create three columns for the dropdowns
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
 
     fs = FewShotPosts()
     tags = fs.get_tags()
@@ -28,6 +28,10 @@ def main():
     with col3:
         # Dropdown for Language
         selected_language = st.selectbox("Language", options=language_options)
+
+    with col4:
+        # Dropdown for Language
+        selected_language = st.selectbox("Tech?", options=["Yes", "No"])
 
 
 
