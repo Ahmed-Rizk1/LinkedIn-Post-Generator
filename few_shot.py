@@ -42,3 +42,5 @@ if __name__ == "__main__":
     # print(fs.get_tags())
     posts = fs.get_filtered_posts("Medium","Hinglish","Job Search")
     print(posts)
+
+    
